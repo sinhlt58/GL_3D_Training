@@ -7,6 +7,7 @@
 #include "Texture.h"
 #include "Shaders.h"
 #include "Model.h"
+#include "assimp/ai_assert.h"
 
 ComponentGraphics::ComponentGraphics() :
 	m_IsUpdateModelMatrix(false),
@@ -58,20 +59,6 @@ void ComponentGraphics::Render(float dt)
 
 	//lighting stuff
 	m_Shader->SetVec3("u_lightViewPos", CameraMgr->GetPosition());
-
-	//m_Shader->SetVec3("u_light.position", Globals::s_LightPosition);
-//	m_Shader->SetVec3("u_light.position", CameraMgr->GetPosition());
-//	m_Shader->SetVec3("u_light.direction", glm::vec3(-0.2f, -1.0f, -0.3f));
-//	m_Shader->SetVec3("u_light.ambient", glm::vec3(0.2f, 0.2f, 0.2f));
-//	m_Shader->SetVec3("u_light.diffuse", glm::vec3(0.9f, 0.9f, 0.9f));
-//	m_Shader->SetVec3("u_light.specular", glm::vec3(1.0f, 1.0f, 1.0f));
-//	m_Shader->SetVec3("u_light.spotDir", CameraMgr->GetFront());
-//	m_Shader->SetFloat("u_light.cutOff", glm::cos(glm::radians(12.5f)));
-//	m_Shader->SetFloat("u_light.outerCutOff", glm::cos(glm::radians(17.5f)));
-	//attenuation
-//	m_Shader->SetFloat("u_light.constant",  1.0f);
-//	m_Shader->SetFloat("u_light.linear",    0.09f);
-//	m_Shader->SetFloat("u_light.quadratic", 0.032f);
 
 	//directional light
 	m_Shader->SetVec3("u_dirLight.direction", glm::vec3(-0.2f, -1.0f, -0.3f));
