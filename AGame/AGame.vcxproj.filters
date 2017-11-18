@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{e23da8b3-5393-43df-9e48-34faf48d71f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{b271e2e0-be07-4c33-9a50-c14c3d54ea9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{c51073de-9ef8-49d3-8740-33d139c7e6f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entity">
+      <UniqueIdentifier>{a1112b99-d922-43de-90bf-f2e0a240aef5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{8e75ee85-7e71-4429-9295-98ca3fcffde5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Manager">
+      <UniqueIdentifier>{892757a9-d303-4133-9734-c7046b96da66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameState">
+      <UniqueIdentifier>{cb8b0913-7455-4bc8-b855-f842c8134774}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\AGame\AGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\AGame\stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\AGame\Entity\Cube.cpp">
+      <Filter>Source Files\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\AGame\Manager\ManagerResource.cpp">
+      <Filter>Source Files\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\AGame\Manager\ManagerDraw.cpp">
+      <Filter>Source Files\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\AGame\Manager\ManagerInput.cpp">
+      <Filter>Source Files\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\AGame\GameState\Game.cpp">
+      <Filter>Source Files\GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\AGame\Common\Globals.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\AGame\Manager\Camera.cpp">
+      <Filter>Source Files\Manager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\AGame\AGame.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\AGame\stdafx.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\AGame\targetver.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\AGame\Entity\Cube.h">
+      <Filter>Source Files\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\AGame\Manager\ManagerResource.h">
+      <Filter>Source Files\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\AGame\Common\Singleton.hpp">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\AGame\Manager\ManagerDraw.h">
+      <Filter>Source Files\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\AGame\Manager\ManagerInput.h">
+      <Filter>Source Files\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\AGame\GameState\Game.h">
+      <Filter>Source Files\GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\AGame\Common\Globals.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\AGame\Manager\Camera.h">
+      <Filter>Source Files\Manager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Data\Shaders\EntityFS.fs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Data\Shaders\EntityVS.vs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Data\Shaders\LightSourceFS.fs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Data\Shaders\LightSourceVS.vs">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
